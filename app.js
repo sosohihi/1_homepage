@@ -38,4 +38,11 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+const port =3000;
+const myip ="0.0.0.0";
+//const myip ="127.0.0.1";
+app.listen(port,myip, function(){
+	console.log('Connected '+myip+' \'s '+port+' port!!!');		
+});
+
 module.exports = app;
